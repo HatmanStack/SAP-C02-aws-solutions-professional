@@ -1,5 +1,3 @@
-Here is a summary of the key points from the AWS Solutions Architect Professional review document, reformatted for better readability:
-
 # Domain 1: Design Solutions for Organizational Complexity
 
 ## Network Connectivity Strategies
@@ -92,4 +90,4 @@ Here is a summary of the key points from the AWS Solutions Architect Professiona
 - Decouple storage and compute
 - CI/CD pipelines, DevOps
 
-I tried to condense the key points into more concise sections, group related information together, and correct any spelling errors. Let me know if you would like me to clarify or expand on any part of the summary.
+
