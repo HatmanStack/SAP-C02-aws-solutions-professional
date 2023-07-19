@@ -263,8 +263,6 @@
 - Managed service, pay-as-you-use pricing
 - Tightly integrated with other AWS services
 
-Here is a comprehensive section on AWS IoT services and capabilities:
-
 # AWS IoT
 
 AWS IoT provides services to connect IoT devices to the AWS cloud, ingest data streams, apply analytics, and create applications.
@@ -320,8 +318,6 @@ Other capabilities:
 - Develop smart utility meters, asset trackers, remote sensors
 
 IoT enables predictive maintenance, remote monitoring, asset tracking, and smart environments across industries.
-
-Here are summary entries for AWS CloudFormation and AWS CloudFront:
 
 # Provisioning
 
