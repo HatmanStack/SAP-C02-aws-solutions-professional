@@ -92,6 +92,23 @@
 - Analyzes network, file system, and process activity
 - Integrates with Security Hub to aggregate findings
 
+**Amazon CloudWatch** - Monitoring service for AWS resources and applications.
+
+- Metrics, logs, and events to monitor systems
+- Alarms and notifications based on defined thresholds
+- Dashboards for visualizing metrics
+
+CloudWatch provides real-time visibility into resource utilization, application performance, operational health, and more. Integrates with AWS services to collect metrics and logs.
+
+**AWS CloudTrail** - Tracks user activity and API usage in AWS accounts. 
+
+- Logs deliver events related to resource provisioning and configuration
+- Integrates with CloudWatch Logs and EventBridge
+- Analyze events with CloudTrail Lake, CloudTrail Insights
+- Can aggregate logs from multiple accounts and regions
+
+CloudTrail provides audit history of account activity across AWS. It records actions taken through the CLI, SDKs, console, and services. Enables security analysis, resource change tracking, and compliance.
+
 # Storage
 
 **Amazon S3** - Highly scalable object storage. Offers different storage classes and lifecycle policies. 
@@ -170,7 +187,7 @@
 - Supports homogenous and heterogeneous migrations
 - Replicate data continuously after migration
 
-**AWS Server Migration Service (SMS)** - Migrates on-premises servers to AWS. Minimizes downtime. Works for both VMware vSphere and physical servers.  
+**AWS Server Migration Service (SMS)** - Migrates on-premises servers to AWS. Minimizes downtime. Agentless works for VMware vSphere vms.  
 
 - Integrates with vCenter for agentless migration
 - Does not support migration of physical servers
@@ -212,6 +229,7 @@
 - Stateful - outbound traffic automatically allowed
 - Assigned at the instance level, not subnet
 - Must explicitly allow access to DNS, DHCP, instance metadata
+- Create audit rules to allow or disallow within your Organization and to check for unused or redudndant security groups
 
 **Access Control Lists (ACLs)** - Resource-based permissions policy that controls cross-account access to AWS resources.
 
@@ -220,6 +238,18 @@
 - Cannot grant permissions to IAM entities in the same account
 - Specify individual accounts or predefined groups (Authenticated Users, All Users)
 
+**IAM Access Advisor** - Gives two types of last accessed information for IAM entities
+					
+- allowed AWS services information
+- allowed AWS action information
+- Does not generate policies
+
+**IAM Access Analyzer** - Analyzes resource policies and generates IAM policies based on actual access patterns.
+
+- IAM Access Analyzer policy generation analyzes CloudTrail logs to identify the specific actions and services that have been used by an IAM entity like a user, group, or role.
+- It generates an IAM policy that grants permissions tailored to those observed actions and services. This helps apply the principle of least privilege access by right-sizing permissions based on actual usage analysis.
+- Access Analyzer evaluates resources shared externally and validates IAM policies against best practices. It provides actionable findings to refine broad policies with minimal needed permissions.
+  
 # Compute 
 
 **Amazon EC2** - Resizable compute capacity in the cloud. Allows configuration of CPU, memory, storage, network.
