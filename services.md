@@ -293,6 +293,24 @@ CloudTrail provides audit history of account activity across AWS. It records act
 - Managed service, pay-as-you-use pricing
 - Tightly integrated with other AWS services
 
+**Amazon Kinesis** - Managed service to collect, process, and analyze real-time data streams.
+
+- Kinesis Data Streams - low latency streaming ingest at scale
+- Kinesis Video Streams - ingest and store video streams 
+- Kinesis Data Analytics - perform real-time analytics on streams
+- Kinesis Data Firehose - load streams into AWS data stores 
+
+Kinesis enables real-time processing of high volume data streams from apps, devices, and systems. Streams can be processed using Lambda, EC2, EMR, and custom apps.
+
+**Kinesis Data Firehose** - Load and store streaming data in AWS services. 
+
+- Captures, transforms, and loads data streams
+- Auto-scales to match data throughput 
+- Near real-time analytics with Lambda
+- Load data to S3, Redshift, Elasticsearch, Splunk
+
+Firehose eliminates complexity of managing streaming data infrastructure. It can batch, compress, and encrypt data before loading. Integrates with many data analytics services.
+
 # AWS IoT
 
 AWS IoT provides services to connect IoT devices to the AWS cloud, ingest data streams, apply analytics, and create applications.
